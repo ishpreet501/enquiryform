@@ -94,7 +94,7 @@ export default function CandidateEnquiryForm() {
    
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/add-enquiry",
+        "https://enquiry-backend.onrender.com/api/add-enquiry",
         formData
       );
       console.log("Upload Success:", response.data.data);

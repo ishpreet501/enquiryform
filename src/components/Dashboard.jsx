@@ -9,7 +9,7 @@ function Dashboard() {
   const navigate = useNavigate(); // Initialize navigate
   const fetchData = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/all-enquiries');
+      const res = await axios.get('https://enquiry-backend.onrender.com/api/all-enquiries');
   
       // Sort by date (ascending)
       const sortedEnquiries = res.data.data.sort(
